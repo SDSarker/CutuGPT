@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Your custom animations below */
+@keyframes aura-glow {
+  0% { box-shadow: 0 0 5px #8ab4f8; }
+  50% { box-shadow: 0 0 20px #c58af8; }
+  100% { box-shadow: 0 0 5px #8ab4f8; }
+}
+
+.mewing-logo {
+  animation: aura-glow 3s infinite ease-in-out;
+}
