@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* Prevent the white bounce/overscroll flash */
+html, body {
+  background-color: #131314; /* Matches your app's dark bg */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevents the whole page from bouncing */
+  overscroll-behavior: none; /* Disables the rubber-band effect */
+}
+
+#root {
+  height: 100%;
+  background-color: #131314;
+}
+
+
 /* Your custom animations below */
 @keyframes aura-glow {
   0% { box-shadow: 0 0 5px #8ab4f8; }

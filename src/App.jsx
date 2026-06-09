@@ -322,7 +322,7 @@ Would prefer if you first go through the suggested questions.
   };
 
   return (
-    <div className="flex flex-col h-screen bg-[#131314] text-[#e3e3e3] font-sans selection:bg-blue-500/30">
+    <div className="flex flex-col h-[100dvh] bg-[#131314] text-[#e3e3e3] font-sans selection:bg-blue-500/30 overflow-hidden overscroll-none">
       {/* Header */}
       <header className="px-6 py-4 flex justify-between items-center border-b border-white/5">
         <div className="flex items-center gap-2">
@@ -367,7 +367,7 @@ Would prefer if you first go through the suggested questions.
       </div>
 
       {/* Chat Area */}
-      <main className="flex-1 overflow-y-auto px-4 md:px-0 py-8">
+      <main className="flex-1 overflow-y-auto px-4 md:px-0 py-8 overscroll-contain bg-[#131314]">
         <div className="max-w-3xl mx-auto space-y-8">
           {messages.map((msg, idx) => (
             <div
